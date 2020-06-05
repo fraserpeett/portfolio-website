@@ -142,8 +142,8 @@ a:active {
 }
 
 .button.contact {
-    background-color: transparent;
-    color: #83d9fd;
+    background-color: #83d9fd;
+    color: #777;
 }
 
 
@@ -167,9 +167,12 @@ a:active {
     border-bottom: 1px solid #4a4a4a;
 }
 
+
 #hero {
     background-color: #fafafa;
     padding: 20px 0;
     display: inline-block;
     width: 100%;
 }
+
+
