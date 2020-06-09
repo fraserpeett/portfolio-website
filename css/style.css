@@ -41,13 +41,17 @@ nav > ul {
 nav > ul > li {
     display: inline-block;
     border: 2px solid #83d9fd;
-    border-radius: 10px;
+    border-radius: 15px;
+    -webkit-box-shadow: 2px 1px 7px 0px rgba(45, 50, 50, 0.75);
+    -moz-box-shadow: 2px 1px 7px 0px rgba(45, 50, 50, 0.75);
+    box-shadow: 2px 1px 7px 0px rgba(255, 255, 255, 0.75);
 }
 
 nav > ul > li > a {
     padding: 0 15px;
     font-weight: 700;
     color: #2B2F39;
+    text-decoration: none;
 }
 
 nav > ul > li > a:hover {
@@ -61,12 +65,6 @@ nav > ul > li > a:visited {
 
 nav > ul > li > a:active {
     color: #83d9fd;
-}
-
-#nav {
-    -webkit-box-shadow: 2px 1px 7px 0px rgba(45, 50, 50, 0.75);
-    -moz-box-shadow: 2px 1px 7px 0px rgba(45, 50, 50, 0.75);
-    box-shadow: 2px 1px 7px 0px rgba(45, 50, 50, 0.75);
 }
 
 h1,
@@ -102,7 +100,6 @@ img {
 
 a {
     color: #b1b1b1;
-    text-decoration: none;
     /* No underlining */
 }
 
@@ -129,7 +126,8 @@ a:active {
     padding: 12px;
     border-radius: 40px;
     border: 2px solid #2c2f3a;
-    transition-duration: 0.2s opacity:
+    text-decoration: none;
+    transition: 1.2s;
 }
 
 .button:hover {
@@ -142,14 +140,19 @@ a:active {
 }
 
 .button.contact {
-    background-color: #83d9fd;
-    color: #777;
+    display: inline-block;
+    background-color: #2d2f3a;
+    border: 2px solid #83d9fd;
+    color: #ffffff;
+    margin: 15px;
+    -webkit-box-shadow: 2px 1px 7px 0px rgba(45, 50, 50, 0.75);
+    -moz-box-shadow: 2px 1px 7px 0px rgba(45, 50, 50, 0.75);
+    box-shadow: 2px 1px 7px 0px rgba(255, 255, 255, 0.75);
 }
 
-
 .button.contact:hover {
-    background-color: #83d9fd;
-    color: #2c2f3a;
+    opacity: 0.8;
+    color: #dddddd;
 }
 
 /* Layout styling */
@@ -168,6 +171,9 @@ a:active {
     border-bottom: 1px solid #4a4a4a;
 }
 
+#work .row:last-child {
+    border-bottom: 1px white;
+}
 
 #hero {
     background-color: #fafafa;
@@ -176,4 +182,43 @@ a:active {
     width: 100%;
 }
 
+.social::after,
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
 
+.social svg {
+    max-width: 50px;
+}
+
+.social ul li {
+    display: inline-block;
+    max-width: 50px;
+    float: center;
+    margin: 10px 30px;
+}
+
+.social a {
+    text-decoration: none;
+}
+
+.social p {
+    margin-top: 0;
+    font-size: 0.7em;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+footer {
+    background-color: #2B2F39;
+    color: white;
+    border: 2px solid #83d9fd;
+    text-align: center;
+    padding: 10px 0;
+}
