@@ -50,7 +50,7 @@ nav > ul > li {
 nav > ul > li > a {
     padding: 0 15px;
     font-weight: 700;
-    color: #2B2F39;
+    color: #f5f5f5;
     text-decoration: none;
 }
 
@@ -155,15 +155,33 @@ a:active {
     color: #dddddd;
 }
 
+.button.prototype {
+    margin-bottom: 15px;
+}
+
 /* Layout styling */
 
 .container {
     padding: 0 15px;
-    max-width: 1200px;
+}
+
+gate {
+    width 100%;
+    max-width 100%;
+    height: auto;
 }
 
 .row {
     margin: 25px 0;
+    width 100%,
+    max-width 100%,
+    height: auto
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 #work .row {
@@ -180,6 +198,10 @@ a:active {
     padding: 20px 0;
     display: inline-block;
     width: 100%;
+}
+
+#about-page h3 {
+    margin-top: 0;
 }
 
 .social::after,
@@ -222,3 +244,34 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+    header {
+        text-align: unset;
+        padding: 30px 15px;
+    }
+
+    nav {
+        width: auto;
+        float: right;
+    }
+
+    [class*="col-"] {
+        float: left;
+        padding: 10px;
+    }
+
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {}
