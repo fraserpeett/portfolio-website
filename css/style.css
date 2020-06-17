@@ -19,6 +19,8 @@ body {
     line-height: 1.6;
     /* Sets the line-height to 1.6 * the font-size */
     color: #4a4a4a;
+    max-width: 1440px;
+    margin: auto;
 }
 
 header {
@@ -31,11 +33,13 @@ header {
 .logo {
     max-width: 250px;
     text-align: center;
+    margin-top: 6px;
 }
 
 nav > ul {
     list-style-type: none;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
 nav > ul > li {
@@ -145,15 +149,18 @@ a:active {
     border: 2px solid #83d9fd;
     color: #ffffff;
     margin: 15px;
+    opacity: 1;
     -webkit-box-shadow: 2px 1px 7px 0px rgba(45, 50, 50, 0.75);
     -moz-box-shadow: 2px 1px 7px 0px rgba(45, 50, 50, 0.75);
     box-shadow: 2px 1px 7px 0px rgba(255, 255, 255, 0.75);
+
 }
 
 .button.contact:hover {
     opacity: 0.8;
-    color: #dddddd;
-}
+    color: #dddddd; 
+} 
+
 
 .button.prototype {
     margin-bottom: 15px;
@@ -257,16 +264,114 @@ Medium devices (640px and larger)
         float: left;
         padding: 10px;
     }
-
 }
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
-@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 1024px) {
+    header {
+        text-align: unset;
+        padding: 30px 15px;
+    }
+
+    nav {
+        width: auto;
+        float: right;
+    }
+
+    [class*="col-"] {
+        float: left;
+        padding: 10px;
+    }
+}
 
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {}
+@media only screen and (min-width: 1440px) {
+    header {
+        text-align: unset;
+        padding: 30px 15px;
+    }
 
+    nav {
+        width: auto;
+        float: right;
+    }
+
+    [class*="col-"] {
+        float: left;
+        padding: 10px;
+    }
+}
+
+/* ==============================
+XX-large devices (1920px or larger)
+================================= */
+@media only screen and (min-width: 1920px) {
+    header {
+        text-align: unset;
+        padding: 30px 15px;
+    }
+
+    nav {
+        width: auto;
+        float: right;
+    }
+
+    [class*="col-"] {
+        float: left;
+        padding: 10px;
+    }
+}
+
+.berlin-illustration {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.sun {
+    animation-name: color-change;
+    animation-direction: normal;
+    animation-duration: 5.0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes color-change {
+    0% {
+        fill: #edc655;
+    }
+
+    50% {
+        fill: #fcffad;
+    }
+
+    100% {
+        fill: #f76414;
+    }
+}
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-back {
+  animation: 40s cloud-move-reverse infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
