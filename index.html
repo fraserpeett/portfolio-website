@@ -24,14 +24,17 @@
     <!---Header Navigation Section--->
     <header>
         <div class="container">
-            <a href="index.html"><img src="img/home/fraser_peett_ux_researcher_logo_white@2x.png" alt="Fraser Peett UX Researcher logo" class="logo"></a>
-            <nav id="nav">
-                <ul>
-                    <li><a href="index.html">Work</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+            <div class="navtoggle" id="myNavtoggle">
+                <a href="index.html"><img src="img/home/fraser_peett_ux_researcher_logo_white@2x.png" alt="Fraser Peett UX Researcher logo" class="logo"></a>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="index.html">Work</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+                        <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
@@ -719,9 +722,6 @@
                         <p>
                             CSS Animations Demo
                         </p>
-                        <!---Purple Text--->
-                        <a href="#" class="button">Dead Button</a>
-                        <!---Red Button--->
                     </div>
                     <div class="col-md-6 col-lg-8 col-xl-4">
                     </div>
@@ -777,7 +777,8 @@
             </div>
         </div>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
