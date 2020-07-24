@@ -127,7 +127,7 @@ h4 {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
 }
 
 a {
@@ -390,9 +390,9 @@ footer .far {
 }
 
 /* ==============================
-Medium devices (640px and larger)
+Medium devices (850px and larger)
 ================================= */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 850px) {
     header {
         text-align: unset;
         padding: 30px 15px;
