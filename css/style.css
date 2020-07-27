@@ -207,11 +207,10 @@ a:active {
 
 @keyframes fadein {
     from {
-        opacity;
-        0;
+        opacity: 0;
     }
 
-    to {
+    to {#4a4a4a
         opacity: 1;
     }
 }
