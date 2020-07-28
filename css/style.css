@@ -180,13 +180,10 @@ a:active {
     width: auto;
     margin: 0 auto;
     padding: 10px 30px 10px 30px;
-    color: #2c2f3a;
-    font-size: 400;
+    font-weight: 400;
     text-decoration: none;
     text-align: center;
     line-height: 30px;
-
-    opacity: 0;
 
     border: 2px solid #2c2f3a;
 
@@ -210,7 +207,7 @@ a:active {
         opacity: 0;
     }
 
-    to {#4a4a4a
+    to {
         opacity: 1;
     }
 }
