@@ -385,6 +385,74 @@ footer .far {
     }
 }
 
+.tattoo-illustration {
+    width: 70%;
+    max-width: 100%;
+    height: auto;
+}
+
+.parting {
+    animation-name: blue-red;
+    animation-direction: normal;
+    animation-duration: 10.0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes blue-red {
+    0% {
+        fill: #5f68d0;
+    }
+
+    50% {
+        fill: #ea5885;
+    }
+
+    100% {
+        fill: #5f68d0;
+    }
+}
+
+.cherries {
+    animation-name: super-red;
+    animation-direction: normal;
+    animation-duration: 2.0s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes super-red {
+    0% {
+        fill: #5f68d0;
+    }
+
+    50% {
+        fill: #fd000a;
+    }
+
+    100% {
+        fill: #5f68d0;
+    }
+}
+
+.blue-bird {
+    animation-duration: 10s;
+    animation-name: bird-flight;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+}
+
+@keyframes bird-flight {
+    from {
+        transform: translate(0, 0px);
+    }
+
+    to {
+        transform: translate(1000px, 0px);
+    }
+}
+
 /* ==============================
 Medium devices (850px and larger)
 ================================= */
