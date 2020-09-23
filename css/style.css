@@ -52,7 +52,7 @@ nav > ul > li > a {
     margin: 4px;
     font-weight: 700;
     color: #ffffff;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 
@@ -94,7 +94,7 @@ nav > ul > li > a:active {
 .navtoggle.responsive li {
     display: block;
     padding: 10px 0;
-    border-top: 1px solid rgba(255, 127, 80, 0.5);
+    /*border-top: 1px solid rgba(255, 127, 80, 0.5);*/
 }
 
 h1,
@@ -485,6 +485,10 @@ Medium devices (850px and larger)
 
     .navtoggle li:last-child {
         display: none;
+    }
+
+    .navtoggle.responsive nav {
+        padding: 0;
     }
 
     .logo {
